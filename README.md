@@ -6,3 +6,8 @@
 Solutions from these languages are available:
 
 > Python
+
+-   create an environment
+-   then clone this repository:
+    leetcode cloner:
+    https://github.com/Sabyasachi-Seal/GitCode/tree/master
