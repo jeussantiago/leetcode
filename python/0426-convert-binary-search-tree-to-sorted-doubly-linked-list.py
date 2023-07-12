@@ -20,9 +20,6 @@ class Solution:
         6-7-8
 
 
-
-
-
         - get left, get left_returned
         - move left pointer node, to the furthest right(biggest number) since currently its in the smalles number
             - set current_node.left = left
