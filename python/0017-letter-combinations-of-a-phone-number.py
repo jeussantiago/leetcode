@@ -5,13 +5,21 @@ class Solution:
         2) digits can be 0 - 4 numbers long
         3) individual digit can be in range of 2 - 9
         4) individual outputs are as long as the digits -> 234 => ['adg', 'adh', 'adi', 'aeg']
-        
+
         recursion
         return output if len of current string creating is same as len of digits
         append current str to array
         go through current digit to char string
         call function - insert counter + 1 and current string as parameters
         start the function with base values such as 0 and ""
+
+        n is th elength of digits
+        Time: O(4^n)
+            ; a digit has upto 4 chars (i.e. 7 and 9 represent 'pqrs' and 'wxyz'). THis means 4 choices
+            ; the height of the tree can up up to the size of the length of digits
+        Space: O(n)
+            ; (n) recursion depth
+            ; (3^n) size of results - leetcode doesnt count space used for output
 
         '''
 
@@ -37,6 +45,5 @@ class Solution:
 
         if digits:
             comboPhone(0, "")
-            
-        return res
 
+        return res
