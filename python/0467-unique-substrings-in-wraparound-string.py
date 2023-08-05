@@ -9,7 +9,9 @@ class Solution:
           = 1 ;    = 3 ;     = 6
         ['t', 'd', 'e', 'de' ,"z", "a", "b", "za", "ab","zab"]
 
-        "cac"
+        "abcabcde"
+        [1,2,3,1,2,3,4,5]
+        [1,2,3] => (repeats with second 'abc) => [1,2,3,4] => [1,2,3,4,5]
 
         Time: O(n)
         Space: O(1)
