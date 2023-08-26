@@ -27,7 +27,7 @@ class Solution:
         - if the number is -1 and is not in the visited, then there is no cycle
 
         Time: O(n)
-        Space: O9n
+        Space: O(n)
         '''
         def getCycleLen(i):
             visited = {}
