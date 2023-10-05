@@ -3,7 +3,7 @@ class Solution:
         '''
         DFS w/ caching
 
-        - same concept as below
+        - same concept as below but added caching
 
         Time: O(n^2)
         Space: (n^2)
