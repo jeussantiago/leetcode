@@ -17,3 +17,13 @@ class Solution:
             appearred.add(occurance)
 
         return True
+
+
+class Solution:
+    def uniqueOccurrences(self, arr: List[int]) -> bool:
+        '''
+        shortened version
+        '''
+        cnt = collections.Counter(arr)
+        occurrences = cnt.values()
+        return len(set(occurrences)) == len(occurrences)
