@@ -28,3 +28,32 @@ class Solution:
         dfs(root)
 
         return longest_path - 1
+
+
+class Solution:
+    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> list:
+        '''
+        follow up question
+        - return the path/array which has the longest_path
+        '''
+        longest_path = [root.val]
+
+        def dfs(node):
+            nonlocal longest_path
+            if not node:
+                return []
+
+            left, right = dfs(node.left), dfs(node.right)
+
+            possible_new_longest_path = left + [node.val] + right
+
+            if len(possible_new_longest_path) > len(longest_path):
+                longest_path = possible_new_longest_path
+
+            if len(left) >= len(right):
+                return left + [node.val]
+
+            return [node.val] + right
+
+        dfs(root)
+        return longest_path
