@@ -5,4 +5,4 @@
 
 Solutions from these languages are available:
 
-> Python
+> Python, JavaScript, SQL, Python (Pandas)
