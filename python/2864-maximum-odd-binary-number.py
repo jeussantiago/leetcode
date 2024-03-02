@@ -5,5 +5,4 @@ class Solution:
         Space: O(n)
         '''
         num_ones = s.count('1')
-        return ('1' * (num_ones - 1)) + ('0' * (len(s) - num_ones)) + '1' 
-        
+        return ('1' * (num_ones - 1)) + ('0' * (len(s) - num_ones)) + '1'
