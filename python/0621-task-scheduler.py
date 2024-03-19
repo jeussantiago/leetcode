@@ -41,12 +41,12 @@ class Solution:
 
         n is the length of tasks array
         k is the cooling time
-        Time: O(nlogk)
+        Time: O(n)
             ; (1) create counter dict - only 26 letters
             ; (1) convert counter dict to heap - only 26 letters
             ; (n)iterate through heap
-            ; (logk) pop from heap - heap can only be as long as k
-            ; (logk) add back to heap
+            ; (logk = log1 = 1) pop from heap - heap can only be as long as k, which is 26 max
+            ; (logk = log1 = 1) add back to heap
         Space: O(1)
             ; (1) dict - only 26 letters
             ; (1) heap - only 26 letters
